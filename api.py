@@ -14,7 +14,7 @@ def converter(num):
     return ''.join(rom)
 
 @api.route('/', methods=['POST'])
-def get_students():
+def roman_num_convert():
     alpha = request.form["number"]
     return converter(alpha)
 
